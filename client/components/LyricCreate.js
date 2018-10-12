@@ -25,7 +25,6 @@ class LyricCreate extends Component {
     this.setState({ content: "" });
   };
   render() {
-    console.log(this.state.content);
     return (
       <form onSubmit={this.submitLyric}>
         <label>Add a Lyric</label>
@@ -42,6 +41,7 @@ const mutation = gql`
       lyrics {
         id
         content
+        likes
       }
     }
   }

@@ -1,7 +1,26 @@
 .collection-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.collection-item a:hover {
+  color: black;
 }
 .material-icons {
   cursor: pointer;
+  color: blue;
+}
+.vote-box {
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+.like-counter {
+  min-width: 2rem;
+  min-height: 2rem;
+  font-size: 16px;
+  color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
